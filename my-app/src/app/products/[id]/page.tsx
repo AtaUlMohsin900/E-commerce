@@ -2,6 +2,8 @@ import { Products } from "@/utils/mock";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import Quantity from "@/components/Quantity";
+// import AddToCart from "@/components/AddToCart";
+
 const getProductsDetail = (id: number | string) => {
   return Products.filter((product) => product.id == id);
 };
@@ -44,6 +46,8 @@ export default function Page({ params }: { params: { id: string } }) {
                 <h3 className="text-[10px] font-semibold">Quantity</h3>
                 <Quantity />
               </div>
+              {/* Add to cart */}
+              {/* <AddToCart /> */}
             </div>
           </div>
         </div>

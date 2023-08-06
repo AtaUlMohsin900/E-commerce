@@ -1,3 +1,4 @@
+import CounterValue from "./Counter";
 import Image from "next/image";
 import Hero from "@/views/Hero";
 import { Component, Layout } from "lucide-react";
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <CounterValue />
       <Promotion />
       <ImageSlider />
     </div>
